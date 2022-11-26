@@ -1,0 +1,381 @@
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__bg {
+  background: url('./assets/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.app__wrapper_info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.app__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.app__wrapper_img-reverse {
+  justify-content: flex-start;
+  margin-right: 2rem;
+}
+
+.app__wrapper_img img {
+  width: 80%;
+}
+
+.custom__button {
+  background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.p__cormorant {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  line-height: 29.9px;
+  font-size: 23px;
+}
+
+.p__opensans {
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.headtext__cormorant {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 64px;
+  line-height: 83.2px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.spoon__img {
+  width: 45px;
+}
+
+@media screen and (min-width: 2000px) {
+  .custom__button,
+  .p__cormorant {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  .p__opensans {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .headtext__cormorant {
+    font-size: 150px;
+    line-height: 210px;
+  }
+
+  .spoon__img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__wrapper {
+    flex-direction: column;
+  }
+
+  .app__wrapper_img {
+    margin: 5rem 0 0 0;
+  }
+
+  .app__wrapper_img-reverse {
+    margin: 0 0 5rem 0;
+  }
+
+  .app__wrapper_img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section__padding {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  
+  .p__cormorant {
+    font-size: 21px;
+  }
+
+  .p__opensans {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .p__opensans {
+    font-size: 12px;
+  }
+
+  .p__cormorant {
+    font-size: 19px;
+  }
+
+  .headtext__cormorant {
+    font-size: 45px;
+    line-height: 70px;
+  }
+}
+
+/* ___________________________________________________ */
+
+/* body {
+  padding: 0;
+  margin: 0;
+} */
+
+.App {
+  font-family: "Quicksand";
+}
+
+.App .navbar {
+  background: #4e4e4e;
+  color: #fff;
+}
+
+.App .navbar .brand {
+  transform: translateX(40px);
+}
+
+.App .hero {
+  width: 100%;
+}
+
+.App .hero h3 {
+  color: #e7bd80;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.App .hero .col {
+  color: #222222;
+}
+
+.App .hero img {
+  width: 60%;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 15px;
+}
+
+.App .hero .pay-container {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.App .hero img.pay-img {
+  border-radius: 0px;
+  width: 30px;
+  height: 15px;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0));
+}
+
+.App .hero .col .title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 5px !important;
+}
+
+.App .hero .col .price {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.App .hero .col .menu {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.App .hero .col .desc {
+  text-align: left !important;
+  width: 300px;
+}
+
+.App .hero .col .btn {
+  font-weight: 700 !important;
+  width: 250px;
+}
+
+.App .produk .card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.App .produk .card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.App .produk .card .title {
+  margin-top: 10px;
+  font-size: 1.1rem;
+
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.App .produk .card .price {
+  margin-top: 0;
+}
+
+.App .produk .card .detail-button {
+  background: #e7bd80;
+  padding: 7px 50px;
+  color: #000;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-top-right-radius: 25px;
+}
+
+.App .produk .card .cart-button {
+  background: #e7bd80;
+  padding: 7px 40px;
+  color: #000;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8rem;
+  border-top-left-radius: 25px;
+}
+
+.App .footer {
+  background: rgba(34, 34, 34, 0.8);
+}
+
+.App .footer .row .col-md-5 h1 {
+  font-family: "Patua One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  color: #e7bd80;
+  margin-bottom: 40px;
+}
+
+.App .footer .row .col-md-5 p {
+  font-size: 64px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.App .footer .row .col-md-5 .email {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  width: 60%;
+  color: #fff;
+}
+
+.App .footer .row .col-md-5 input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.App .footer .row .col-md-5 input::placeholder {
+  color: #fff;
+}
+
+.App .footer .row .col-md-5 .img-sosmed {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.App .footer .row .col h3 {
+  color: #e7bd80;
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.App .footer .row .col a {
+  display: inline-block;
+  font-weight: 500;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.App .footer .row .col .pay-img {
+  width: 20px;
+}
+
+.App .footer .row .col .part-logo {
+  width: 50px;
+  margin-right: 0px;
+}
